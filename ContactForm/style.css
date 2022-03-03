@@ -1,0 +1,215 @@
+
+*{
+   font-family: Arial, Helvetica, sans-serif;
+   line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: lightgray;
+}
+.header {
+            text-align: center;
+        }
+
+            .header img {
+                display: inline-block;
+                float: left;
+                vertical-align: middle;
+                padding-left: 200px;
+                width: 200px;
+                height: 150px;
+            }
+
+            .header h1 {
+                display: inline-block;
+                font-size: 75px;
+                padding-right: 400px;
+            }
+
+        .navBar {
+            width: 100%;
+            overflow: auto;
+            background-color: #333;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+            .navBar a {
+                float: left;
+                font-size: 20px;
+                color: white;
+                width: 15%;
+                text-align: center;
+                padding: 12px;
+                text-decoration: none;
+            }
+
+                .navBar a:hover {
+                    background-color: black;
+                }
+
+                .navBar a.active {
+                    background-color: dodgerblue;
+                }
+
+                    .navBar a.active:hover {
+                        background-color: deepskyblue;
+                    }
+
+.contactbackground{
+    height: 40vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9));
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contactbackground h3{
+    font-size: 1.2rem;
+    font-weight: 350;
+}
+.contactbackground h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    letter-spacing: 4px;
+}
+.line div{
+    margin: 0;
+}
+.line div:nth-child(1){
+
+    height: 5px;
+    width: 350px;
+    background: dodgerblue;
+    border-radius: 6px;
+ 
+}
+
+.text{
+    font-weight: 300;
+    opacity: 0.9;
+}
+.contactbackground .text{
+    margin: 1.6rem 0;
+}
+.contactbody{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.contactinfo{
+    margin: 2rem 0;
+    text-align: center;
+    padding: 2rem 0;
+}
+.contactinfo span{
+    display: block;
+}
+.contactinfo div{
+    margin: 0.8rem 0;
+    padding: 1rem;
+}
+.contactinfo span .fas{
+    font-size: 2rem;
+    padding-bottom: 0.9rem;
+    color: #f7327a;
+}
+.contactinfo div span:nth-child(2){
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.contactinfo .text{
+    padding-top: 0.2rem;
+}
+.contactform{
+    padding: 6rem 0;
+    border-top: 1px solid #c7c7c7;
+}
+.contactform form{
+    padding-bottom: 1rem;
+}
+.controlform{
+    width: 100%;
+    border: 1.5px solid #c7c7c7;
+    border-radius: 5px;
+    padding: 0.7rem;
+    margin: 0.6rem 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    outline: 0;
+}
+
+.controlform:focus{
+    box-shadow: 0 0 6px -3px rgba(48, 48, 48, 1);
+}
+
+h3{
+  font-family: 'Open Sans', sans-serif;
+   font-size: 1.2rem;
+
+}
+.sendbtn{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #fff;
+    background: dodgerblue;
+    border: none;
+    border-radius: 5px;
+    padding: .75rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.sendbtn:hover{
+    opacity: 0.8;
+}
+.contact-form > div img{
+    width: 85%;
+}
+
+.contactfooter{
+    padding: 3rem;
+    background: #333;
+}
+.contactfooter h3{
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+}
+.social-links a{
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+    transition: all 0.3s ease;
+}
+.social-links a:hover{
+    color: dodgerblue;
+    border-color:deepskyblue;
+}
+
+
+    .contactinfo{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\overallStyles.css" />
+    <title>Support</title>
+    <style>
+        .content {
+            position: relative;
+            max-width: 920px;
+            margin-right: auto;
+            margin-left: 20px;
+            text-align: center;
+        }
+
+        .content label {
+            float: left;
+        }
+
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+
+        input[type=submit] {
+            background-color: dodgerblue;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            input[type=submit]:hover {
+                background-color: grey;
+            }
+
+        .container {
+            border-radius: 5px;
+            align-content: center;
+            background-color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="https://cdn.discordapp.com/attachments/928207757373485061/943379026276392960/Public_Printer_Logo.png" alt="Public Printer Logo" />
+        <h1>Public Printer</h1>
+    </div>
+    <div class="navBar">
+        <a href="..\3D Printer Website\index.html">Home</a>
+        <a href="..\printable objects page\printable objects.html">Printable Objects</a>
+        <a href="..\PrintersPage\Printers_Page.html">Printers</a>
+        <a href="..\post for a service page\post for a service.html">Post for Service</a>
+        <a href="..\ContactForm\contactform.html">Contact Us</a>
+        <a class="active" href="..\Support_Page\Support Page.html">Support</a>
+    </div>
+    <div class="content">
+        <h1 style="text-align: center;">Contact Us</h1>
+        <div class="container">
+            <form action="mailto:PublicPrinterHelp@gmail.com" method="post" enctype="text/plain">
+
+                <label for="Account">Account Name</label>
+                <input type="text" id="Account" name="Account" placeholder="Enter your account name..">
+
+                <label for="ordernumber">Order number</label>
+                <input type="text" id="ordernumber" name="ordernumber" placeholder="Your order number ..">
+
+                <label for="Issue">Issue</label>
+                <textarea id="Issue" name="Issue" placeholder="Please explain your issue.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
