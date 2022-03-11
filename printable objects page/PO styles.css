@@ -1,0 +1,26 @@
+.form {
+	float: right;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
+	position: relative;
+	top: 0;
+	background-color: darkgrey;
+	color: black;
+}
+	.form input {
+		width: 150px;
+		height: 25px
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+		.form input.submit {
+			width: 100px;
+		}
+	.form label {
+		margin-bottom: 10px;
+	}
+	.form h2 {
+		text-align: center;
+		font-size: 30px;
+	}

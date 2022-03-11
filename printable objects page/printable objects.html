@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>Printable Objects</title>
     <link rel="stylesheet" href="..\overallStyles.css" />
+    <link rel="stylesheet" href="PO styles.css"/>
 </head>
 
 <body>
@@ -21,6 +22,24 @@
         <a href="..\Support_Page\Support Page.html">Support</a>
     </div>
     <h2>Available Prints:</h2>
+    <div class = "form">
+        <h2>Submit your own<br>printable objects!</h2>
+        <form action="/action_page.php">
+            <label for="firstName">First Name:</label> <br>
+            <input type="text" id = firstName name="firstName" value = "John"><br>
+
+            <label for = "lastName">Last Name:</label><br>
+            <input type="text" id = lastName name="lastName" value = "Doe"> <br>
+
+            <label for = "email">Email:</label> <br>
+            <input type="text" id = "email" name="email" value = "you@gmail.com"><br>
+
+            <label for = "phone">Phone:</label><br>
+            <input type="phone" id = "phone" name="phone" value = "xxx-xxx-xxxx"> <br> <br>
+            <input type = "file" id = "real-file" /> <br>
+            <input class = "submit" type="submit" value="submit"> 
+        </form> 
+    </div>
     <img src="images copy/3d_picture.jpg" alt="an image of a 3d printed boat that is available for printing" title="3d printed boat" width="400" height="250">
     <img src="images copy/3d_picture 2.jpg" alt="an image of a 3d printed pencil holder that is available for printing" title="3d printed pencil holder" width="400" height="250">
     <img src="images copy/3d_picture 3.jpg" alt="an image of 3d printed gears that is available for printing" title="3d printed gears" width="400" height="250">

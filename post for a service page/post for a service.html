@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\overallStyles.css" />
+    <link rel="stylesheet" href="PFAS styles.css">
     <title>Post For A Service</title>
 </head>
 
@@ -19,6 +20,24 @@
         <a class="active" href="..\post for a service page\post for a service.html">Post for Service</a>
         <a href="..\ContactForm\contactform.html">Contact Us</a>
         <a href="..\Support_Page\Support Page.html">Support</a>
+    </div>
+    <div class = "form">
+        <h2>Submit your own post for servicing!</h2>
+        <form action="/action_page.php">
+            <label for="firstName">First Name:</label> <br>
+            <input type="text" id = firstName name="firstName" value = "John"><br>
+
+            <label for = "lastName">Last Name:</label><br>
+            <input type="text" id = lastName name="lastName" value = "Doe"> <br>
+
+            <label for = "email">Email:</label> <br>
+            <input type="text" id = "email" name="email" value = "you@gmail.com"><br>
+
+            <label for = "phone">Phone:</label><br>
+            <input type="phone" id = "phone" name="phone" value = "xxx-xxx-xxxx"> <br> <br>
+            <input type = "file" id = "real-file" /> <br>
+            <input class = "submit" type="submit" value="submit"> 
+        </form> 
     </div>
     <h2>Most Recent Posts: </h2>
     <img src="images/3d pic.jpg" alt="an image of a 3d printed phone holder that is requesting for printing" title="3d printed phone holder" width="400" height="250">

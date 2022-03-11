@@ -4,13 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="..\overallStyles.css" />
+      <link rel="stylesheet" href="../ContactForm/style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Support</title>
     <style>
         .content {
             position: relative;
             max-width: 920px;
             margin-right: auto;
-            margin-left: 20px;
+            margin-left: auto;
             text-align: center;
         }
 
@@ -18,7 +20,7 @@
             float: left;
         }
 
-        input[type=text], select, textarea {
+        input[type=text], input[type=email], select, textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ccc;
@@ -28,6 +30,7 @@
             margin-bottom: 16px;
             resize: vertical
         }
+
 
         input[type=submit] {
             background-color: dodgerblue;
@@ -62,25 +65,75 @@
         <a href="..\post for a service page\post for a service.html">Post for Service</a>
         <a href="..\ContactForm\contactform.html">Contact Us</a>
         <a class="active" href="..\Support_Page\Support Page.html">Support</a>
+        <a href="..\acknowledgements.html">Acknowledgements</a>
     </div>
     <div class="content">
-        <h1 style="text-align: center;">Contact Us</h1>
+        <h1 style="text-align: center;">Need Help?<br></br></h1>
         <div class="container">
-            <form action="mailto:PublicPrinterHelp@gmail.com" method="post" enctype="text/plain">
+            <form action="https://formsubmit.co/PublicPrinterHelp@gmail.com" method="POST">
+              <input type="hidden" name="Needs Support">
 
                 <label for="Account">Account Name</label>
-                <input type="text" id="Account" name="Account" placeholder="Enter your account name..">
-
+                <input type="text" name="Account" placeholder="Enter your account name.." required>
+                <label for="Email">Email</label>
+                <input type="email" name="Email" placeholder="Enter your email..." required>
+              
                 <label for="ordernumber">Order number</label>
-                <input type="text" id="ordernumber" name="ordernumber" placeholder="Your order number ..">
+                <input type="text" name="ordernumber" placeholder="Your order number..." required>
 
                 <label for="Issue">Issue</label>
-                <textarea id="Issue" name="Issue" placeholder="Please explain your issue.." style="height:200px"></textarea>
+                <textarea name="Issue" placeholder="Please explain your issue..." style="height:200px"></textarea>
 
                 <input type="submit" value="Submit">
 
             </form>
         </div>
     </div>
+  <div class="content">
+    <br></br>
+    <h1 style="text-align:left center;">FAQ's</h1>
+        <h3 style="font-size: 15px;">Q: How do I find the print I want?</h3>
+         <p style="font-size: 15px;" > A: Use keywords in the search bar or browse through 3-D files under the Printable Objects tab.</p>
+    <br></br>
+        <h3 style="font-size: 15px;"> Q: What do I do if I can’t find the print I want?</h3>
+         <p style="font-size: 15px;" >A: If the print you are looking for isn’t listed by  one of our Creators, you can either post it on the Bounty Board <br> for Creators to contact you, or
+           contact a Creator currently taking commissions through our messaging service.</p>
+    <br></br>
+           <h3 style="font-size: 15px;">Q: How do I know if my file is 3-D printable? </h3>
+            <p style="font-size: 15px;" >A: First ensure your file is an STL type file from a
+reputable source. Some files may not be properly prepared <br>for printing or have impossible
+dimensions unless they have been checked.
+</p>
+    <br></br>
+<h3 style="font-size: 15px;"> Q: What happens if I have a problem but I completed my transaction outside of Public Printer?</h3>
+<p style="font-size: 15px;" >A: Public Printer only guarantees print quality and transaction safety when done through our
+website where we <br>can save all transaction history and agreed upon printing and details through
+our messaging service.
+</p>
+    <br></br>
+<h3 style="font-size: 15px;">Q: How do I get started as a Creator with Public Printer? </h3>
+    <p style="font-size: 15px;" >A: Simply make an account, upload
+some STLs or pursue prints on the Bounty Board. It’s our mission to promote <br> and empower
+individual printers by giving them a platform to utilize their tools.</p>
+    <br></br>
+<h3 style="font-size: 15px;">Q: What does Public Printer guarantee?</h3>
+<p style="font-size: 15px;" > A: Public Printer guarantees the quality of any 3-D print
+ordered or your money back. Similarly for Creators we act <br>as a secure third party to ensure your
+payment is ready after your print is mailed.</p>
+    <br></br>
+<h3 style="font-size: 15px;">Q: I have a problem with my print or my transaction. What should I do? </h3>
+    <p style="font-size: 15px;" >A: Contact support and
+fill out the fields above to send us a ticket and we will get back <br>to
+you as soon as possible to resolve your problem.</p>
+    <br></br>
+  </div>
+          <div class="contactfooter">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-facebook"></a>
+            </div>
+        </div>
 </body>
 </html>

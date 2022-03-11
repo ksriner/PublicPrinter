@@ -20,41 +20,46 @@
         <a href="..\post for a service page\post for a service.html">Post for Service</a>
         <a class="active" href="contactform.html">Contact Us</a>
         <a href="..\Support_Page\Support Page.html">Support</a>
+        <a href="..\acknowledgements.html">Acknowledgements</a>
     </div>
 
     <section class="contactsection">
         <div class="contactbackground">
-            <h3>Get in Touch with Us</h3>
             <h2>contact us</h2>
-            <div class="line">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <p class="text">If you have any questions, please contact us — we’ll answer you as soon as possible..</p>
+            <p class="text">If you need to contact a printer or you are interested in purchasing a printable object, please contact us — we’ll answer you as soon as possible.</p>
         </div>
 
-
-
-
-        <div class="contactform">
-            <form>
+        <div class="content">
+          <div class="container">
+            <form action="https://formsubmit.co/PublicPrinterHelp@gmail.com" method="POST">
+              <input type="hidden" name="From contact page">
                 <div>
                     <h3>
-                        Contact us</h3>
-                            <input type="text" class="controlform" placeholder="First Name">
-                            <input type="text" class="controlform" placeholder="Last Name">
+                        Contact Us</h3>
+
+                        <label for = "Option-select">Subject</label>
+                  <select name = options id = "option-selection" required>
+                        <option value="">--Please choose an option--</option>
+                        <option value="printer">Printer</option>
+                        <option value="printableobject">Printable Object</option>
+                        <option value="other">Other</option>
+
+                            <input type="text"  name="First Name" placeholder="First Name" required>
+                            <input type="text"  name="Last Name" placeholder="Last Name" required>
                 </div>
                 <div>
-                    <input type="email" class="controlform" placeholder="E-mail">
-                    <input type="text" class="controlform" placeholder="Phone">
+                    <input type="email"  name="E-mail" placeholder="Email" required>
+                    <input type="text"  name="Phone" placeholder="Phone Number" required>
+                
+
                 </div>
-                <textarea rows="5" placeholder="Message" class="controlform"></textarea>
-                <input type="submit" class="sendbtn" value="send message">
+                <textarea rows="5" name="Message" placeholder="Message" ></textarea>
+                <input type="submit"  value="Submit">
             </form>
 
             <div>
             </div>
+        </div>
         </div>
 
 
